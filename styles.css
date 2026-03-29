@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: "Yu Gothic", sans-serif;
+  background: radial-gradient(circle at top, rgba(38, 255, 66, 0.12), transparent 24%),
+              radial-gradient(circle at bottom right, rgba(255, 0, 0, 0.12), transparent 18%),
+              linear-gradient(180deg, #06060f 0%, #090614 40%, #050209 100%);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 15% 10%, rgba(255,255,255,0.08), transparent 10%),
+              radial-gradient(circle at 80% 25%, rgba(0,255,0,0.06), transparent 12%),
+              radial-gradient(circle at 30% 80%, rgba(255,0,0,0.06), transparent 10%);
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 40px),
+    repeating-linear-gradient(-45deg, rgba(255,255,255,0.02) 0, rgba(255,255,255,0.02) 1px, transparent 1px, transparent 40px);
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+h1 {
+  font-family: 'Creepster', cursive;
+  font-size: clamp(3rem, 6vw, 5rem);
+  text-shadow: 0 0 10px #00ff00;
+  text-align: center;
+  color: #3dfc3d;
+  border: 50px solid transparent;
+  padding: 10px;
+  border-image: url(https://i.pinimg.com/736x/f4/fb/24/f4fb24f6ca1de5ba397a859eee5b5e51.jpg) 200 round;
+  margin: 1.5rem auto;
+  max-width: 90%;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+nav a {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0 15px;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 8px red;
+}
+
+img.right {
+  float: right;
+  margin: 0 0 1rem 60px;
+}
+
+img.left {
+  float: left;
+  margin: 0 60px 1rem 0;
+}
+
+img.floating-img {
+  width: 42px;
+  height: 42px;
+}
+
+img:hover {
+  filter: drop-shadow(0 0 10px red);
+  cursor: help;
+}
+
+.content-box {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  text-align: center;
+  font-family: Verdana, sans-serif;
+}
+
+.welcome-msg {
+  color: red;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.6;
+}
