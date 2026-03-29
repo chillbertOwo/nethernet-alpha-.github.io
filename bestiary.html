@@ -15,16 +15,80 @@
 
 <nav>
   <a href="index.html">HOME</a> | 
-  <a href="bestiary.html">BESTIARY</a> | 
+  <a href="bestiary.html" class="active">BESTIARY</a> | 
   <a href="graveyard.html">GRAVEYARD</a> | 
   <a href="account.html">ACCOUNT</a>
 </nav>
 
+<section class="tabs">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-recs" checked>
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-reviews">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-forum">
+
+  <div class="tab-controls">
+    <label class="tab-label" for="tab-recs">Recommendations</label>
+    <label class="tab-label" for="tab-reviews">Reviews</label>
+    <label class="tab-label" for="tab-forum">Discussion</label>
+  </div>
+
+  <div class="tab-panels">
+    <article class="tab-panel" id="panel-recs">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Rare Beasts</h2>
+          <p>Detailed entries for creatures that stalk the night forests and haunted ruins.</p>
+        </div>
+        <div class="card">
+          <h2>Spirit Guides</h2>
+          <p>Notes on spectral allies, their signatures, and what to watch for during hunts.</p>
+        </div>
+        <div class="card">
+          <h2>Habitat Notes</h2>
+          <p>Classify monsters by region, danger level, and the weather they prefer.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-reviews">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Hunt Logs</h2>
+          <p>Capture your best encounters and the creatures that left the deepest mark.</p>
+        </div>
+        <div class="card">
+          <h2>Strengths</h2>
+          <p>Compare monster abilities and how they fare against different adventurer builds.</p>
+        </div>
+        <div class="card">
+          <h2>Weaknesses</h2>
+          <p>Learn the all-important vulnerabilities for each beast in your collection.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-forum">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Beast Talk</h2>
+          <p>Share findings with other hunters and swap tips about the rarest creatures.</p>
+        </div>
+        <div class="card">
+          <h2>Field Reports</h2>
+          <p>Post your sightings, sketches, and strange behaviors from the wilds.</p>
+        </div>
+        <div class="card">
+          <h2>Bestiary Builds</h2>
+          <p>Suggest entries, metadata, and ways to expand the monster catalog over time.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <div class="content-box">
   <div class="welcome-msg">Bestiary</div>
-  <p class="description">Discover the creatures that roam Nether.net. This page is the start of your monster catalog.</p>
-  <p class="description">Add entries here for your favorite beasts, spirits, and haunted companions.</p>
+  <p class="description">Explore the creatures that haunt the Nether. This page is your catalog for every monster and spirit.</p>
+  <p class="description">Keep your favorite beasts, notes, and hunting strategies here as the bestiary grows.</p>
 </div>
 
-</body>
-</html>
+  <footer>Nether.net Bestiary • Track creatures, field reports, and the most atmospheric monster lore.</footer>

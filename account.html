@@ -17,14 +17,78 @@
   <a href="index.html">HOME</a> | 
   <a href="bestiary.html">BESTIARY</a> | 
   <a href="graveyard.html">GRAVEYARD</a> | 
-  <a href="account.html">ACCOUNT</a>
+  <a href="account.html" class="active">ACCOUNT</a>
 </nav>
+
+<section class="tabs">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-recs" checked>
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-reviews">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-forum">
+
+  <div class="tab-controls">
+    <label class="tab-label" for="tab-recs">Recommendations</label>
+    <label class="tab-label" for="tab-reviews">Reviews</label>
+    <label class="tab-label" for="tab-forum">Discussion</label>
+  </div>
+
+  <div class="tab-panels">
+    <article class="tab-panel" id="panel-recs">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Profile Summary</h2>
+          <p>Snapshot your saved content, activity, and the media you return to most.</p>
+        </div>
+        <div class="card">
+          <h2>Watchlist</h2>
+          <p>Plan your next binge with suggested lists, favorites, and bookmarked media.</p>
+        </div>
+        <div class="card">
+          <h2>Custom Tags</h2>
+          <p>Organize the content you love with labels like haunted, retro, or atmospheric.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-reviews">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Saved Ratings</h2>
+          <p>Keep track of what you’ve rated and which recommendations you’ve already tried.</p>
+        </div>
+        <div class="card">
+          <h2>Review Drafts</h2>
+          <p>Store thoughts before you publish, then share your personal impressions.</p>
+        </div>
+        <div class="card">
+          <h2>Favorites</h2>
+          <p>Highlight the media, creatures, and stories that matter most to your profile.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-forum">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Inbox</h2>
+          <p>Future place for messages, invites, and community alerts on Nether.net.</p>
+        </div>
+        <div class="card">
+          <h2>Activity Feed</h2>
+          <p>Track your recent posts, replies, and media interactions in one place.</p>
+        </div>
+        <div class="card">
+          <h2>Account Tools</h2>
+          <p>Plan future settings for preferences, privacy, and login security.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
 <div class="content-box">
   <div class="welcome-msg">Account</div>
-  <p class="description">Manage your Nether.net profile and preferences here.</p>
-  <p class="description">This page can later include login info, inventory, and account details.</p>
+  <p class="description">Your Nether.net hub for saved recommendations, favorites, and activity tracking.</p>
+  <p class="description">This page will become the control center for your profile, lists, and community presence.</p>
 </div>
 
-</body>
-</html>
+  <footer>Nether.net Account • Your personal hub for saved picks, ratings, and upcoming community features.</footer>

@@ -16,15 +16,79 @@
 <nav>
   <a href="index.html">HOME</a> | 
   <a href="bestiary.html">BESTIARY</a> | 
-  <a href="graveyard.html">GRAVEYARD</a> | 
+  <a href="graveyard.html" class="active">GRAVEYARD</a> | 
   <a href="account.html">ACCOUNT</a>
 </nav>
 
+<section class="tabs">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-recs" checked>
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-reviews">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-forum">
+
+  <div class="tab-controls">
+    <label class="tab-label" for="tab-recs">Recommendations</label>
+    <label class="tab-label" for="tab-reviews">Reviews</label>
+    <label class="tab-label" for="tab-forum">Discussion</label>
+  </div>
+
+  <div class="tab-panels">
+    <article class="tab-panel" id="panel-recs">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Crypt Stories</h2>
+          <p>Unearth rituals, legends, and the haunted histories bound to each tomb.</p>
+        </div>
+        <div class="card">
+          <h2>Relic Guide</h2>
+          <p>Catalog artifacts, relics, and the oddities found among shadowed graves.</p>
+        </div>
+        <div class="card">
+          <h2>Memorials</h2>
+          <p>Preserve the lore of lost spirits, honored dead, and forgotten alliances.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-reviews">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Grave Reminiscence</h2>
+          <p>Review the most unforgettable encounters with apparitions and crypt dwellers.</p>
+        </div>
+        <div class="card">
+          <h2>Ritual Ratings</h2>
+          <p>Rank ceremonies, spells, and protective chants by effectiveness and atmosphere.</p>
+        </div>
+        <div class="card">
+          <h2>Haunting Outcome</h2>
+          <p>Share what worked best when exploring the Nether graveyard alone or in a group.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-forum">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Spirit Exchange</h2>
+          <p>Discuss ghost stories, unusual grave sightings, and ritual ideas.</p>
+        </div>
+        <div class="card">
+          <h2>Graveyard Threads</h2>
+          <p>Organize conversations around relics, memorials, and nether mysteries.</p>
+        </div>
+        <div class="card">
+          <h2>Event Planning</h2>
+          <p>Coordinate future spectral hunts, memorial ceremonies, and eerie meetups.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
 <div class="content-box">
   <div class="welcome-msg">Graveyard</div>
-  <p class="description">A haunting place for lost lore, rituals, and spectral memories.</p>
-  <p class="description">Use this page to organize stories, relics, and eerie graves from the Nether.net world.</p>
+  <p class="description">A quiet archive for Nether.net's lost rituals, locations, and ghostly stories.</p>
+  <p class="description">Use this page to keep grave records, relic notes, and haunting memories neatly organized.</p>
 </div>
 
-</body>
-</html>
+  <footer>Nether.net Graveyard • Preserve the eerie tales and ritual fragments that define the shadows.</footer>

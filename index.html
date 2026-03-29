@@ -16,11 +16,76 @@
 
 <!-- Navigation Menu -->
 <nav>
-  <a href="index.html">HOME</a> | 
+  <a href="index.html" class="active">HOME</a> | 
   <a href="bestiary.html">BESTIARY</a> | 
   <a href="graveyard.html">GRAVEYARD</a> | 
   <a href="account.html">ACCOUNT</a>
 </nav>
+
+<section class="tabs">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-recs" checked>
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-reviews">
+  <input class="tab-toggle" type="radio" name="site-tabs" id="tab-forum">
+
+  <div class="tab-controls">
+    <label class="tab-label" for="tab-recs">Recommendations</label>
+    <label class="tab-label" for="tab-reviews">Reviews</label>
+    <label class="tab-label" for="tab-forum">Discussion</label>
+  </div>
+
+  <div class="tab-panels">
+    <article class="tab-panel" id="panel-recs">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Spooky Picks</h2>
+          <p>Curated horror and dark fantasy media recommendations for your next late-night watch.</p>
+        </div>
+        <div class="card">
+          <h2>Retro Obscura</h2>
+          <p>Classic supernatural stories from film, TV, and books that fit the Nether.net mood.</p>
+        </div>
+        <div class="card">
+          <h2>New Releases</h2>
+          <p>Fresh recommendations as the board grows, including series, movies, and games.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-reviews">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Featured Reviews</h2>
+          <p>User-written reviews for media, from cryptic thrillers to haunted epics.</p>
+        </div>
+        <div class="card">
+          <h2>Rating System</h2>
+          <p>Score your favorites, save updates, and compare top picks with other Nether visitors.</p>
+        </div>
+        <div class="card">
+          <h2>Review Threads</h2>
+          <p>Organize content by genre and discussion style for future board posts.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="tab-panel" id="panel-forum">
+      <div class="cards-grid">
+        <div class="card">
+          <h2>Community Board</h2>
+          <p>Discussion categories for series, movies, books, and general media talk.</p>
+        </div>
+        <div class="card">
+          <h2>Watch Parties</h2>
+          <p>Plan shared viewing sessions and recommendation swaps with fellow Nether members.</p>
+        </div>
+        <div class="card">
+          <h2>Future Ideas</h2>
+          <p>Content placeholders for polls, character threads, and media challenge events.</p>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
 
 <!-- Main Text Content -->
 <div class="content-box">
@@ -35,5 +100,6 @@
   </p>
 </div>
 
+  <footer>Nether.net prototype • A dark media recommendation and discussion hub for horror, fantasy, and supernatural stories.</footer>
 </body>
 </html>
