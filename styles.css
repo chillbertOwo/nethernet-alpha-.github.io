@@ -225,6 +225,293 @@ img:hover {
   line-height: 1.7;
 }
 
+.account-hero {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.hero-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 28px;
+  padding: 1.75rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.22);
+}
+
+.hero-card h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #bafca0;
+}
+
+.hero-card p {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #d5ddc4;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.auth-section {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.auth-panel {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 32px;
+  padding: 2rem;
+  box-shadow: 0 22px 60px rgba(0,0,0,0.24);
+}
+
+.auth-intro {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.auth-intro h2 {
+  margin-bottom: 0.75rem;
+  color: #b6ffab;
+  font-size: 2rem;
+}
+
+.auth-intro p {
+  color: #c3d3c3;
+  line-height: 1.75;
+}
+
+.auth-toggle {
+  display: none;
+}
+
+.auth-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.auth-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.auth-label:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,0.08);
+}
+
+#auth-login:checked ~ .auth-controls label[for="auth-login"],
+#auth-signup:checked ~ .auth-controls label[for="auth-signup"] {
+  background: rgba(0,255,0,0.18);
+  border-color: rgba(0,255,0,0.4);
+  box-shadow: 0 0 16px rgba(0,255,0,0.18);
+}
+
+.auth-panels {
+  display: grid;
+}
+
+.auth-card {
+  display: none;
+}
+
+#auth-login:checked ~ .auth-panels #panel-auth-login,
+#auth-signup:checked ~ .auth-panels #panel-auth-signup {
+  display: block;
+}
+
+.auth-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.auth-form fieldset {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: rgba(0,0,0,0.18);
+}
+
+.auth-form legend {
+  padding: 0 0.5rem;
+  color: #a8ff9a;
+  font-weight: 600;
+}
+
+.auth-form label {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #d9e0d7;
+  font-size: 0.95rem;
+}
+
+.auth-form input {
+  width: 100%;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  background: rgba(255,255,255,0.05);
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.auth-form input:focus {
+  outline: none;
+  border-color: rgba(128,255,128,0.55);
+  box-shadow: 0 0 12px rgba(128,255,128,0.18);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-row.split-row {
+  margin-top: 0.25rem;
+}
+
+.checkbox-label {
+  color: #d4d9d1;
+  font-size: 0.95rem;
+}
+
+.checkbox-label input {
+  margin-right: 0.5rem;
+  accent-color: #70ff87;
+}
+
+.small-link {
+  color: #a0ff9d;
+  text-decoration: none;
+}
+
+.small-link:hover {
+  text-decoration: underline;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  padding: 0.95rem 1.2rem;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background: rgba(0,255,0,0.22);
+  transform: translateY(-1px);
+}
+
+.button-primary {
+  background: linear-gradient(135deg, rgba(112,255,135,0.95), rgba(22,180,55,0.95));
+  color: #050b02;
+}
+
+.button-primary:hover {
+  background: linear-gradient(135deg, rgba(145,255,162,1), rgba(67,218,93,1));
+}
+
+.jp-page {
+  font-family: "Yu Mincho","Hiragino Mincho Pro","Yu Gothic","Meiryo",sans-serif;
+}
+
+.jp-hero {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.jp-hero-panel {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.jp-hero-panel h2 {
+  margin: 0 0 1rem;
+  color: #d9f7c7;
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+}
+
+.jp-hero-panel p {
+  color: #dde5d4;
+  line-height: 1.9;
+  font-size: 1.05rem;
+}
+
+.jp-content {
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+}
+
+.jp-section {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 24px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.jp-section h3 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #c7ffad;
+}
+
+.jp-section p,
+.jp-section li {
+  color: #dbe4d7;
+  line-height: 1.8;
+}
+
+.jp-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.jp-list li {
+  margin-bottom: 0.85rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.jp-list li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+  color: #b8ff9b;
+}
+
+.jp-accessibility {
+  background: rgba(0,0,0,0.18);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

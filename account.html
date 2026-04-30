@@ -17,8 +17,16 @@
   <a href="index.html">HOME</a> | 
   <a href="bestiary.html">BESTIARY</a> | 
   <a href="graveyard.html">GRAVEYARD</a> | 
-  <a href="account.html" class="active">ACCOUNT</a>
+  <a href="account.html" class="active">ACCOUNT</a> | 
+  <a href="ja.html">日本語</a>
 </nav>
+
+<section class="account-hero">
+  <div class="hero-card">
+    <h2>Welcome to your Nether.net account hub</h2>
+    <p>Save your favorites, build custom watchlists, post reviews, and join the Nether.net community.</p>
+  </div>
+</section>
 
 <section class="tabs">
   <input class="tab-toggle" type="radio" name="site-tabs" id="tab-recs" checked>
@@ -36,17 +44,18 @@
       <fieldset>
         <legend>Recommendations</legend>
         <div class="cards-grid">
-        <div class="card">
-          <h2>Profile Summary</h2>
-          <p>Snapshot your saved content, activity, and the media you return to most.</p>
-        </div>
-        <div class="card">
-          <h2>Watchlist</h2>
-          <p>Plan your next binge with suggested lists, favorites, and bookmarked media.</p>
-        </div>
-        <div class="card">
-          <h2>Custom Tags</h2>
-          <p>Organize the content you love with labels like haunted, retro, or atmospheric.</p>
+          <div class="card">
+            <h2>Profile Summary</h2>
+            <p>Snapshot your saved content, activity, and the media you return to most.</p>
+          </div>
+          <div class="card">
+            <h2>Watchlist</h2>
+            <p>Plan your next binge with suggested lists, favorites, and bookmarked media.</p>
+          </div>
+          <div class="card">
+            <h2>Custom Tags</h2>
+            <p>Organize the content you love with labels like haunted, retro, or atmospheric.</p>
+          </div>
         </div>
       </fieldset>
     </article>
@@ -55,17 +64,18 @@
       <fieldset>
         <legend>Reviews</legend>
         <div class="cards-grid">
-        <div class="card">
-          <h2>Saved Ratings</h2>
-          <p>Keep track of what you’ve rated and which recommendations you’ve already tried.</p>
-        </div>
-        <div class="card">
-          <h2>Review Drafts</h2>
-          <p>Store thoughts before you publish, then share your personal impressions.</p>
-        </div>
-        <div class="card">
-          <h2>Favorites</h2>
-          <p>Highlight the media, creatures, and stories that matter most to your profile.</p>
+          <div class="card">
+            <h2>Saved Ratings</h2>
+            <p>Keep track of what you’ve rated and which recommendations you’ve already tried.</p>
+          </div>
+          <div class="card">
+            <h2>Review Drafts</h2>
+            <p>Store thoughts before you publish, then share your personal impressions.</p>
+          </div>
+          <div class="card">
+            <h2>Favorites</h2>
+            <p>Highlight the media, creatures, and stories that matter most to your profile.</p>
+          </div>
         </div>
       </fieldset>
     </article>
@@ -74,27 +84,88 @@
       <fieldset>
         <legend>Discussion</legend>
         <div class="cards-grid">
-        <div class="card">
-          <h2>Inbox</h2>
-          <p>Future place for messages, invites, and community alerts on Nether.net.</p>
-        </div>
-        <div class="card">
-          <h2>Activity Feed</h2>
-          <p>Track your recent posts, replies, and media interactions in one place.</p>
-        </div>
-        <div class="card">
-          <h2>Account Tools</h2>
-          <p>Plan future settings for preferences, privacy, and login security.</p>
+          <div class="card">
+            <h2>Inbox</h2>
+            <p>Future place for messages, invites, and community alerts on Nether.net.</p>
+          </div>
+          <div class="card">
+            <h2>Activity Feed</h2>
+            <p>Track your recent posts, replies, and media interactions in one place.</p>
+          </div>
+          <div class="card">
+            <h2>Account Tools</h2>
+            <p>Plan future settings for preferences, privacy, and login security.</p>
+          </div>
         </div>
       </fieldset>
     </article>
   </div>
 </section>
 
+<section class="auth-section">
+  <div class="auth-panel">
+    <div class="auth-intro">
+      <h2>Sign in or create a new account</h2>
+      <p>Use your account to save favorites, join discussions, and unlock full Nether.net features.</p>
+    </div>
+
+    <input class="auth-toggle" type="radio" name="auth-tab" id="auth-login" checked>
+    <input class="auth-toggle" type="radio" name="auth-tab" id="auth-signup">
+
+    <div class="auth-controls">
+      <label class="auth-label" for="auth-login">Sign In</label>
+      <label class="auth-label" for="auth-signup">Sign Up</label>
+    </div>
+
+    <div class="auth-panels">
+      <div class="auth-card" id="panel-auth-login">
+        <form class="auth-form" novalidate>
+          <fieldset>
+            <legend>Welcome back</legend>
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" placeholder="you@example.com" required>
+
+            <label for="login-password">Password</label>
+            <input type="password" id="login-password" placeholder="••••••••" required>
+
+            <div class="form-row split-row">
+              <label class="checkbox-label"><input type="checkbox"> Remember me</label>
+              <a href="#" class="small-link">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="button">Sign In</button>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="auth-card" id="panel-auth-signup">
+        <form class="auth-form" novalidate>
+          <fieldset>
+            <legend>Create your account</legend>
+            <label for="signup-name">Username</label>
+            <input type="text" id="signup-name" placeholder="NetherExplorer" required>
+
+            <label for="signup-email">Email Address</label>
+            <input type="email" id="signup-email" placeholder="you@example.com" required>
+
+            <label for="signup-password">Password</label>
+            <input type="password" id="signup-password" placeholder="••••••••" required>
+
+            <label for="signup-confirm">Confirm Password</label>
+            <input type="password" id="signup-confirm" placeholder="••••••••" required>
+
+            <button type="submit" class="button button-primary">Create Account</button>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="content-box">
-  <div class="welcome-msg">Account</div>
-  <p class="description">Your Nether.net hub for saved recommendations, favorites, and activity tracking.</p>
-  <p class="description">This page will become the control center for your profile, lists, and community presence.</p>
+  <div class="welcome-msg">Your account hub</div>
+  <p class="description">Nether.net will let you curate saved lists, track reviews, and customize your profile experience.</p>
+  <p class="description">Sign up now to unlock watchlists, favorites, and the community tools coming soon.</p>
 </div>
 
   <footer>Nether.net Account • Your personal hub for saved picks, ratings, and upcoming community features.</footer>
